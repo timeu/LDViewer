@@ -8,7 +8,7 @@
   </parent>
   <groupId>at.gmi.nordborglab.widgets</groupId>
   <artifactId>ldviewer</artifactId>
-  <version>0.1.1-SNAPSHOT</version>
+  <version>0.1.1</version>
   <name>ldviewer</name>
   <url>http://maven.apache.org</url>
   <properties>
