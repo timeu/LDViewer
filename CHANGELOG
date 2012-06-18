@@ -1,3 +1,7 @@
+June 11, 2011 - Release 0.1.1
+    * Some Bugfixes in pde file 
+    * Support for retrieving genome wide LD and exact ld data added 
+
 June 11, 2011 - Release 0.1.0
 
     * Initial version
