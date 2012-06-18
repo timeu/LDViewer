@@ -10,6 +10,14 @@ public class LDDataPoint extends JavaScriptObject {
 		return this.r2;
 	}-*/;
 	
+	public final native void setR2(double r2) /*-{
+		this.r2 = r2;
+	}-*/;
+	
+	public final native void setPosX(int posX) /*-{
+		this.posX = posX;
+	}-*/;
+	
 	public final native int getPosX() /*-{
 		return this.posX;
 	}-*/;
@@ -18,8 +26,12 @@ public class LDDataPoint extends JavaScriptObject {
 		return this.posY;
 	}-*/;
 	
+	public final native void setPosY(int posY) /*-{
+		this.posY =posY;
+	}-*/;
+	
 	public final int getR2Color(double threshold,int maxColor) {
-		return (int)Math.round((1 - (getR2() - 0.3)/(1-0.3))*255);
+		return (int)Math.round((1 - (getR2() - threshold)/(1-threshold))*maxColor);
 	}
 	
 }

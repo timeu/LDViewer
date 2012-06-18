@@ -26,7 +26,6 @@ void api_setData(int[] snps,float[][] r2,int start,int end) {
 void api_setSize(int width,boolean isDraw) {
     if (width==0)
     	return;
-    size(width,width/2+browser.snpPosBandHeight);
     browser.setSize(width,width,isDraw);
 }
 
@@ -95,6 +94,7 @@ class LDBrowser {
     public void setSize(int width,int height,boolean isDraw) {
         if (this.width == width && this.height == height)
             return;
+        size(width,width/2+snpPosBandHeight);
         console.log('setsize'+width);
         pg = null;
         pgSNPs = null; 
@@ -155,7 +155,6 @@ class LDBrowser {
         pgSNPs = null;
         dataPoints = new ArrayList(); 
         filteredDataPoints = new ArrayList();
-        
         for (int i = 0; i <data.length ; i++) {
             for (int j = 0; j < data[i].length; j++) {
               DataPoint dataPoint = new DataPoint(0+j*separation,0+i*separation,separation,snps[j],snps[i],data[i][j]);
@@ -293,7 +292,6 @@ class LDBrowser {
         popMatrix();
         displaySnpPosBand();
         displayLegend();
-        
     }
     
     private void createSNPsBand() {
@@ -412,7 +410,7 @@ class DataPoint {
    public void display(float threshold,float maxHue,float alpha) {
        noStroke();
        colorMode(HSB, 360, 100, 100,1);
-       float hue = (1 - (r2 - threshold)/(1-threshold))*maxHue;
+       float hue = calculateHue(threshold,maxHue);
        fill(hue,100,100,alpha);
        rect(x,y,separation,separation);
    }
@@ -420,9 +418,16 @@ class DataPoint {
     public void createR2Boxes(float threshold,float maxHue, PGraphics pg) {
         pg.noStroke();
         pg.colorMode(HSB, 360, 100, 100,1);
-        float hue = (1 - (r2 - threshold)/(1-threshold))*maxHue;
+        float hue = calculateHue(threshold,maxHue);
         pg.fill(hue,100,100,1);
         pg.rect(x,y,separation,separation);
+    }
+    
+    private float calculateHue(float threshold,float maxHue) {
+         float hue = (1 - (r2 - threshold)/(1-threshold))*maxHue;
+         if (hue < 0)
+            hue=0;
+         return hue;
     }
     
     public float getR2() {
