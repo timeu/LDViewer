@@ -1,7 +1,11 @@
-June 11, 2011 - Release 0.1.1
+October 4, 2012 - Release 0.1.2 
+    * PJS (Update): Processing wrapper library updated to 0.6.1
+    * pom.xml: GWT version updated to 2.5.0-rc2  
+
+June 11, 2012 - Release 0.1.1
     * Some Bugfixes in pde file 
     * Support for retrieving genome wide LD and exact ld data added 
 
-June 11, 2011 - Release 0.1.0
+June 11, 2012 - Release 0.1.0
 
     * Initial version
