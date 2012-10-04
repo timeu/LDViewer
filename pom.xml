@@ -14,8 +14,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <gwtVersion>2.4.0</gwtVersion>
-    <github.maven.repository>file:///srv/uemit.seren/repository/maven-repository/</github.maven.repository>
+    <gwtVersion>2.5.0-rc2</gwtVersion>
   </properties>
   <repositories>
      <repository>
@@ -39,7 +38,7 @@
      <dependency>
     	<groupId>at.gmi.nordborglab</groupId>
     	<artifactId>processingjs</artifactId>
-    	<version>0.6.0</version>
+    	<version>0.6.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
    <distributionManagement>
