@@ -1,4 +1,8 @@
-October 4, 2012 - Release 0.1.2 
+Match 4, 2013 - Release 0.1.2
+    * PJS (Update): Processing warpper library updated to 0.6.2
+    * pom.xml: GWT version updated to 2.5.1-rc1
+
+October 4, 2012 - Release 0.1.2
     * PJS (Update): Processing wrapper library updated to 0.6.1
     * pom.xml: GWT version updated to 2.5.0-rc2  
 
