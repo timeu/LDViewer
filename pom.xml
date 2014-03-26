@@ -8,7 +8,7 @@
   </parent>
   <groupId>at.gmi.nordborglab.widgets</groupId>
     <artifactId>ldviewer</artifactId>
-    <version>0.1.3-SNAPSHOT</version>
+    <version>0.1.3</version>
     <name>ldviewer</name>
     <url>http://maven.apache.org</url>
 
@@ -37,7 +37,7 @@
      <dependency>
     	<groupId>at.gmi.nordborglab</groupId>
     	<artifactId>processingjs</artifactId>
-    	<version>0.6.2-SNAPSHOT</version>
+    	<version>0.6.2</version>
     </dependency>
   </dependencies>
    <distributionManagement>
@@ -68,6 +68,6 @@
   	<url>https://timeu@github.com/timeu</url>
   	<connection>scm:git:https://timeu@github.com/timeu/LDViewer.git</connection>
   	<developerConnection>scm:git:https://timeu@github.com/timeu/LDViewer.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>ldviewer-0.1.3</tag>
   </scm>
 </project>
