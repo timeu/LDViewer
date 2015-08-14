@@ -3,6 +3,8 @@
 
 LDViewer is a Google Web Toolkit (GWT) widget containing a [processingjs][0] sketch for visualizing [LD triangle plots][1].
 
+![LDViewer](https://raw.githubusercontent.com/timeu/LDViewer/master/ldviewer.png "LDViewer")
+
 
 ## How do I use it?
 
