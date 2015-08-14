@@ -1,0 +1,8 @@
+<module>
+    <inherits name="com.google.gwt.user.User"/>
+    <inherits name="com.google.web.bindery.autobean.AutoBean" />
+
+    <source path="client"/>
+
+    <entry-point class="sample.client.SampleEntryPoint"/>
+</module>
