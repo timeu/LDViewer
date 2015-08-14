@@ -66,7 +66,7 @@ file like this:
 
 ## Where can I learn more?
 
- * Check out the [sample app][5] ([Source Code][6]) for a full example of using LDViewer.
+ * Check out the [sample app][6] ([Source Code][7]) for a full example of using LDViewer.
  
 [0]: http://processingjs.org
 [1]: http://www.nature.com/nrg/journal/v4/n8/fig_tab/nrg1123_F1.html
@@ -74,3 +74,5 @@ file like this:
 [5]: https://docs.google.com/document/d/1tir74SB-ZWrs-gQ8w-lOEV3oMY6u6lF2MmNivDEihZ4/edit#
 [2]: https://en.wikipedia.org/wiki/Triangular_matrix
 [3]: https://github.com/timeu/LDViewer/blob/master/ldviewer-sample/src/main/resources/sample/client/data/ld_sample_data.json
+[6]: http://timeu.github.io/ldviewer
+[7]: https://github.com/timeu/LDViewer/tree/master/ldviewer-sample 
