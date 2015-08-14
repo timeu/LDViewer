@@ -74,5 +74,5 @@ file like this:
 [5]: https://docs.google.com/document/d/1tir74SB-ZWrs-gQ8w-lOEV3oMY6u6lF2MmNivDEihZ4/edit#
 [2]: https://en.wikipedia.org/wiki/Triangular_matrix
 [3]: https://github.com/timeu/LDViewer/blob/master/ldviewer-sample/src/main/resources/sample/client/data/ld_sample_data.json
-[6]: http://timeu.github.io/ldviewer
+[6]: http://timeu.github.io/LDViewer
 [7]: https://github.com/timeu/LDViewer/tree/master/ldviewer-sample 
