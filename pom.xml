@@ -177,9 +177,9 @@
         <module>ldviewer-sample</module>
     </modules>
   <scm>
-  	<url>https://timeu@github.com/timeu</url>
-  	<connection>scm:git:https://timeu@github.com/timeu/LDViewer.git</connection>
-  	<developerConnection>scm:git:https://timeu@github.com/timeu/LDViewer.git</developerConnection>
+  	<url>https://timeu@github.com/timeu/ldviewergeno</url>
+  	<connection>scm:git:https://timeu@github.com/timeu/ldviewer.git</connection>
+  	<developerConnection>scm:git:https://timeu@github.com/timeu/ldviewer.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 </project>
