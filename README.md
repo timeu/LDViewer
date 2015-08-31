@@ -21,7 +21,7 @@ ldviewer.load(new Runnable() {
    }
 });
 ```
-To display data following information users have to call the `showLDValues(int[] positions,float[][] r2Values, int start, int end)` function with following parameter:
+To display data users have to call the `showLDValues(int[] positions,float[][] r2Values, int start, int end)` function with following parameters:
  - `positions`: Array of integer 
  - `r2Values`: multi-dimensional array of floats in a [triangular matrix][2] form.
  - `start`: start position (should be the first position of the position array)
@@ -41,7 +41,7 @@ section:
 
 ```xml
     <dependency>
-      <groupId>com.github.timeu.gwt-libs.ldviewer</groupId>
+      <groupId>com.github.timeu.gwtlibs.ldviewer</groupId>
       <artifactId>ldviewer</artifactId>
       <version>1.0.0</version>
     </dependency>
