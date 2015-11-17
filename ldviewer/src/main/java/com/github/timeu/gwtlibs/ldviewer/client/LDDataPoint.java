@@ -1,25 +1,22 @@
 package com.github.timeu.gwtlibs.ldviewer.client;
 
 
-import com.google.gwt.core.client.js.JsProperty;
-import com.google.gwt.core.client.js.JsType;
+import jsinterop.annotations.JsOverlay;
+import jsinterop.annotations.JsPackage;
+import jsinterop.annotations.JsProperty;
+import jsinterop.annotations.JsType;
 
-@JsType
-public interface LDDataPoint {
+@JsType(isNative = true,namespace = JsPackage.GLOBAL,name="Object")
+public class LDDataPoint {
 
+	public double r2;
 
-	@JsProperty double getR2();
+	public int posX;
 
-	@JsProperty void setR2(double r2);
-	
-	@JsProperty void setPosX(int posX);
-	
-	@JsProperty int getPosX();
+	public int posY;
 
-	@JsProperty int getPosY();
-	
-	@JsProperty void setPosY(int posY);
-	
-	int getR2Color(double threshold,int maxColor);
-	
+	@JsOverlay
+	public final int getR2Color(double threshold,int maxColor) {
+		return (int)Math.round((1 - (r2 - threshold)/(1-threshold))*maxColor);
+	}
 }

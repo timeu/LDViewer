@@ -5,14 +5,14 @@ import com.github.timeu.gwtlibs.processingjsgwt.client.ProcessingInstance;
 import com.google.gwt.core.client.JsArray;
 import com.google.gwt.core.client.JsArrayInteger;
 import com.google.gwt.core.client.JsArrayNumber;
-import com.google.gwt.core.client.js.JsType;
+import jsinterop.annotations.JsType;
 
 import java.util.List;
 
 /**
  * Created by uemit.seren on 8/12/15.
  */
-@JsType
+@JsType(isNative = true)
 interface LDViewerInstance extends ProcessingInstance {
 
     void api_setSize(int width, boolean isDraw);

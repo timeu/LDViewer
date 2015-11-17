@@ -223,11 +223,11 @@ public class LDViewerTest {
 
     private LDDataPoint[] getFakeHighlightedPoints() {
         LDDataPoint[] points = new LDDataPoint[1];
-        LDDataPoint point1 = mock(LDDataPoint.class);
-        given(point1.getPosX()).willReturn(1);
-        given(point1.getPosY()).willReturn(2);
-        given(point1.getR2()).willReturn(0.5);
-        given(point1.getR2Color(anyDouble(),anyInt())).willReturn(1);
+        LDDataPoint point1 = new LDDataPoint();
+        point1.posX = 1;
+        point1.posY = 2;
+        point1.r2 = 0.5;
+        points[0] = point1;
         return points;
     }
 

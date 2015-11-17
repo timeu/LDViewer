@@ -160,7 +160,7 @@ public class SampleEntryPoint implements EntryPoint {
     }
 
     private String getMsgFromDataPoint(LDDataPoint data) {
-        return "x:" + data.getPosX() + ", y:" + data.getPosY() + ",r2:" + data.getR2();
+        return "x:" + data.posX + ", y:" + data.posY + ",r2:" + data.r2;
     }
 
     private void sinkEvents() {
