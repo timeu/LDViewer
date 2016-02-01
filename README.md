@@ -47,15 +47,14 @@ section:
     </dependency>
 ```
 
-LDViewer uses [GWT 2.7's][4] new [JSInterop feature][5] and thus it has to be enabled in the GWT compiler args.
+LDViewer uses [GWT 2.8's][4] new [JSInterop feature][5] and thus it has to be enabled in the GWT compiler args.
 For maven:
 ```xml
 <compilerArgs>
-    <compilerArg>-XjsInteropMode</compilerArg>
-    <compilerArg>JS</compilerArg>
+    <compilerArg>-generateJsInteropExports</compilerArg>
 </compilerArgs>
 ```
-or passing it to the compiler via `-XjsInteropMode`
+or passing it to the compiler via `-generateJsInteropExports`
 
 You can also download the [jar][1] directly or check out the source using git
 from <https://github.com/timeu/ldviewer.git> and build it yourself. Once
@@ -72,8 +71,8 @@ file like this:
  
 [0]: http://processingjs.org
 [1]: http://www.nature.com/nrg/journal/v4/n8/fig_tab/nrg1123_F1.html
-[4]: http://www.gwtproject.org/release-notes.html#Release_Notes_2_7_0_RC1
-[5]: https://docs.google.com/document/d/1tir74SB-ZWrs-gQ8w-lOEV3oMY6u6lF2MmNivDEihZ4/edit#
+[4]: http://www.gwtproject.org/release-notes.html#Release_Notes_2_8_0_BETA1
+[5]: https://docs.google.com/document/d/10fmlEYIHcyead_4R1S5wKGs1t2I7Fnp_PaNaa7XTEk0/edit#heading=h.o7amqk9edhb9
 [2]: https://en.wikipedia.org/wiki/Triangular_matrix
 [3]: https://github.com/timeu/LDViewer/blob/master/ldviewer-sample/src/main/resources/sample/client/data/ld_sample_data.json
 [6]: http://timeu.github.io/LDViewer
