@@ -9,7 +9,7 @@ import jsinterop.annotations.JsType;
 public interface LDData {
 
 	@JsProperty
-	int[] getPositions();
+	int[] getSnps();
 	@JsProperty float[][] getR2();
 	@JsProperty int getStart();
 	@JsProperty int getEnd();

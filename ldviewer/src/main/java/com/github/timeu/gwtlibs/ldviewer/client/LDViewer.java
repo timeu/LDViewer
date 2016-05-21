@@ -11,9 +11,6 @@ import com.github.timeu.gwtlibs.processingjsgwt.client.Processing;
 import com.github.timeu.gwtlibs.ldviewer.client.event.HighlightLDEvent;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.core.client.JsArray;
-import com.google.gwt.core.client.JsArrayInteger;
-import com.google.gwt.core.client.JsArrayNumber;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.shared.EventHandler;
@@ -24,9 +21,6 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.RequiresResize;
 import com.google.web.bindery.event.shared.Event;
 import com.google.web.bindery.event.shared.HandlerRegistration;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class LDViewer extends Composite implements  RequiresResize,
         HasUnhighlightLDHandlers,HasHighlightLDHandlers,
@@ -104,7 +98,7 @@ public class LDViewer extends Composite implements  RequiresResize,
      * @param data the data that should be rendered
      */
     public void showLDValues(LDData data) {
-        showLDValues(data.getPositions(), data.getR2(), data.getStart(), data.getEnd());
+        showLDValues(data.getSnps(), data.getR2(), data.getStart(), data.getEnd());
     }
 
     /**

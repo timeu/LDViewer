@@ -48,7 +48,6 @@
         <dependency>
             <groupId>com.github.timeu.gwt-libs.processingjs-gwt</groupId>
             <artifactId>processingjs-gwt</artifactId>
-            <type>gwt-lib</type>
         </dependency>
         <!-- Test dependencies -->
         <dependency>

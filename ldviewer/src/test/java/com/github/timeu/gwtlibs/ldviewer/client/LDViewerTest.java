@@ -4,21 +4,13 @@ import com.github.timeu.gwtlibs.ldviewer.client.event.HighlightLDEvent;
 import com.github.timeu.gwtlibs.ldviewer.client.event.MiddleMouseClickEvent;
 import com.github.timeu.gwtlibs.ldviewer.client.event.UnhighlightLDEvent;
 import com.github.timeu.gwtlibs.processingjsgwt.client.Processing;
-import com.github.timeu.gwtlibs.processingjsgwt.client.ProcessingInstance;
 import com.google.gwt.core.client.JavaScriptObject;
-import com.google.gwt.core.client.JsArray;
-import com.google.gwt.core.client.JsArrayInteger;
-import com.google.gwt.core.client.JsArrayNumber;
-import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.testing.StubScheduler;
 import com.google.gwt.user.client.Element;
-import com.google.gwt.dom.client.Node;
 import com.google.gwt.resources.client.ExternalTextResource;
 import com.google.gwt.resources.client.ResourceException;
-import com.google.gwt.safehtml.shared.SafeUri;
 import com.google.gwtmockito.GwtMock;
 import com.google.gwtmockito.GwtMockitoTestRunner;
-import com.google.gwtmockito.WithClassesToStub;
 import com.google.web.bindery.event.shared.HandlerRegistration;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,10 +18,6 @@ import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Matchers;
 import org.mockito.Mock;
-import org.mockito.invocation.InvocationOnMock;
-import org.mockito.stubbing.Answer;
-
-import java.util.List;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -77,7 +65,7 @@ public class LDViewerTest {
     public void testLoadData() throws ResourceException {
         LDData data = getFakeData();
         ldViewer.showLDValues(data);
-        verify(ldViewer.getInstance()).api_setData(data.getPositions(), data.getR2(), data.getStart(), data.getEnd());
+        verify(ldViewer.getInstance()).api_setData(data.getSnps(), data.getR2(), data.getStart(), data.getEnd());
     }
 
     @Test(expected = Exception.class)
@@ -97,7 +85,7 @@ public class LDViewerTest {
         verify(ldViewer.getInstance()).api_setData(positionCaptor.capture(),r2ValuesCaptor.capture(),eq(1000),eq(2000));
         int[] capturedPositions = positionCaptor.getValue();
         float[][] capturedr2Values = r2ValuesCaptor.getValue();
-        assertArrayEquals(data.getPositions(),capturedPositions);
+        assertArrayEquals(data.getSnps(),capturedPositions);
         assertArrayEquals(data.getR2(), capturedr2Values);
     }
 
@@ -236,7 +224,7 @@ public class LDViewerTest {
         given(data.getStart()).willReturn(1000);
         given(data.getEnd()).willReturn(2000);
         int[] positions = new int[]{1000,1100};
-        given(data.getPositions()).willReturn(positions);
+        given(data.getSnps()).willReturn(positions);
         float[][] r2Values = new float[1][];
         r2Values[0] = new float[]{1};
         given(data.getR2()).willReturn(r2Values);
@@ -256,7 +244,7 @@ public class LDViewerTest {
             }
             r2Values[i] = row;
         }
-        given(data.getPositions()).willReturn(positions);
+        given(data.getSnps()).willReturn(positions);
         given(data.getR2()).willReturn(r2Values);
         return data;
     }

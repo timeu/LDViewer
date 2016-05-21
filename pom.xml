@@ -55,18 +55,12 @@
                 <groupId>com.github.timeu.gwt-libs.ldviewer</groupId>
                 <artifactId>ldviewer</artifactId>
                 <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.timeu.gwt-libs.ldviewer</groupId>
-                <artifactId>ldviewer</artifactId>
-                <version>${project.version}</version>
                 <type>gwt-lib</type>
             </dependency>
             <dependency>
                 <groupId>com.github.timeu.gwt-libs.processingjs-gwt</groupId>
                 <artifactId>processingjs-gwt</artifactId>
                 <version>${processing.version}</version>
-                <type>gwt-lib</type>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
