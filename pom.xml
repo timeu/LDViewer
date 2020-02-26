@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.timeu.gwt-libs.ldviewer</groupId>
     <artifactId>ldviewer-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>LDViewer (Parent)</name>
     <description>A GWT based visualization for LD</description>
     <packaging>pom</packaging>
@@ -195,6 +195,6 @@
   	<url>https://timeu@github.com/timeu/ldviewer</url>
   	<connection>scm:git:https://timeu@github.com/timeu/ldviewer.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/timeu/ldviewer.git</developerConnection>
-    <tag>v1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 </project>
