@@ -9,6 +9,7 @@
     <artifactId>ldviewer</artifactId>
     <packaging>gwt-lib</packaging>
     <name>LDViewer</name>
+    <description>A GWT based visualization for LD (Core Library)</description>
 
     <build>
         <plugins>
