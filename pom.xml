@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.timeu.gwt-libs.ldviewer</groupId>
     <artifactId>ldviewer-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>LDViewer (Parent)</name>
     <description>A GWT based visualization for LD</description>
     <packaging>pom</packaging>
@@ -74,7 +74,7 @@
             <dependency>
                 <groupId>com.github.timeu.gwt-libs.processingjs-gwt</groupId>
                 <artifactId>processingjs-gwt</artifactId>
-                <version>${processing.version}</version>
+                <version>1.0.0</version>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
@@ -195,5 +195,6 @@
   	<url>https://timeu@github.com/timeu/ldviewer</url>
   	<connection>scm:git:https://timeu@github.com/timeu/ldviewer.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/timeu/ldviewer.git</developerConnection>
+    <tag>v1.0.0</tag>
   </scm>
 </project>
